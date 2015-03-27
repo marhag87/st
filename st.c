@@ -3326,23 +3326,6 @@ xdraws(char *s, Glyph base, int x, int y, int charlen, int bytelen) {
 		bg = &dc.col[base.bg];
 	}
 
-	if(base.mode & ATTR_BOLD) {
-		/*
-		 * change basic system colors [0-7]
-		 * to bright system colors [8-15]
-		 */
-		if(BETWEEN(base.fg, 0, 7) && !(base.mode & ATTR_FAINT))
-			fg = &dc.col[base.fg];
-
-		if(base.mode & ATTR_ITALIC) {
-			font = &dc.ibfont;
-			frcflags = FRC_ITALICBOLD;
-		} else {
-			font = &dc.bfont;
-			frcflags = FRC_BOLD;
-		}
-	}
-
 	if(IS_SET(MODE_REVERSE)) {
 		if(fg == &dc.col[defaultfg]) {
 			fg = &dc.col[defaultbg];
