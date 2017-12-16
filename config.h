@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "inconsolata:pixelsize=16:antialias=false:autohint=false";
+char font[] = "inconsolata:pixelsize=16:antialias=true:autohint=true";
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;
