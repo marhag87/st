@@ -114,7 +114,7 @@ const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 12;
+unsigned int defaultfg = 11;
 unsigned int defaultbg = 8;
 unsigned int defaultcs = 14;
 unsigned int defaultrcs = 15;
