@@ -5,12 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+char font[] = "inconsolata:pixelsize=16:antialias=true:autohint=true";
 
 /* disable bold, italic and roman fonts globally */
-int disablebold = 0;
-int disableitalic = 0;
-int disableroman = 0;
+int disablebold = 1;
+int disableitalic = 1;
+int disableroman = 1;
 
 int borderpx = 2;
 
@@ -55,7 +55,7 @@ unsigned int actionfps = 30;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-unsigned int blinktimeout = 800;
+unsigned int blinktimeout = 0;
 
 /*
  * thickness of underline and bar cursors
@@ -114,7 +114,7 @@ const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 12;
+unsigned int defaultfg = 11;
 unsigned int defaultbg = 8;
 unsigned int defaultcs = 14;
 unsigned int defaultrcs = 15;
